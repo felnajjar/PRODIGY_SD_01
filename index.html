@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Infotech - Task 1</title>
+    
+</head>
+<body>
+    <h1>Prodigy Infotech - Task 1</h1>
+    <form>
+        <p>Input temperature value: </p>
+        <input type="number" name="temperature">
+
+        <p>Choose the temperature unit: </p>
+        <input type="radio" id="kelvin" name="unit" value="Kelvin">
+        <label for="kelvin">Kelvin (K)</label>
+        <br>
+        <input type="radio" id="fahrenheit" name="unit" value="Fahrenheit">
+        <label for="fahrenheit">Fahrenheit (F)</label>
+        <br>
+        <input type="radio" id="celsius" name="unit" value="Celsius">
+        <label for="celsius">Celsius (C)</label>
+        <br><br>
+        <input type="button" onclick="convert(this.form)" value="Convert">
+    </form>
+    <p id="result"></p>
+    <br>
+    <script src="index.js"></script>
+</body>
+</html>
